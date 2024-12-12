@@ -6,6 +6,8 @@ class Yamet < Formula
   # sha256 "your_tarball_sha256_checksum"
   license "GPL"
 
+  version "0.1.0"
+
   depends_on "cmake" => :build
   depends_on "boost"
   depends_on "zlib"
