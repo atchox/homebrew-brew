@@ -1,8 +1,8 @@
 class Yamet < Formula
   desc "Yamet: A tool powered by Boost and zlib"
   # homepage "https://github.com/imallona/yamet"
-  url "https://github.com/imallona/yamet/.git", :branch => "master"
-  head "https://github.com/imallona/yamet/.git", :branch => "method"
+  url "https://github.com/imallona/yamet.git", :branch => "master"
+  head "https://github.com/imallona/yamet.git", :branch => "method"
   # sha256 "your_tarball_sha256_checksum"
   license "GPL"
 
