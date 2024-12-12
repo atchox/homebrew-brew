@@ -13,7 +13,7 @@ class Yamet < Formula
   depends_on "zlib"
 
   def install
-    cd "yamet/method" do
+    cd "method" do
       # Set the build directory
       build_dir = "build"
 
