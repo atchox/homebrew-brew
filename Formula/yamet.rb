@@ -1,34 +1,16 @@
 class Yamet < Formula
-  desc "Yamet: A tool powered by Boost and zlib"
-  # homepage "https://github.com/imallona/yamet"
-  url "https://github.com/imallona/yamet.git", :branch => "master"
-  head "https://github.com/imallona/yamet.git", :branch => "method"
-  # sha256 "your_tarball_sha256_checksum"
+  desc "Yamet: Yet Another Methylation Entropy Tool" 
+  url "https://github.com/imallona/yamet/releases/download/v1.0.0-dev/yamet-v1.0.0-dev.tar.gz"
+  sha256 "f91801f5151a32b5547a7070b76b93d6e9178422310f28e5584d9682b1471191"
   license "GPL"
 
-  version "0.1.0"
-
-  depends_on "cmake" => :build
   depends_on "boost"
   depends_on "zlib"
 
   def install
-    cd "method" do
-      # Set the build directory
-      build_dir = "build"
-
-      # Create the build directory
-      mkdir build_dir
-
-      # Run cmake to configure the build
-      system "cmake", "-DCMAKE_INSTALL_PREFIX=#{prefix}", "-B#{build_dir}", "-S."
-
-      # Build the project
-      system "make", "-C", build_dir
-
-      # Install the project
-      system "make", "-C", build_dir, "install"
-    end
+    bin.install "bin/yamet"
+    include.install Dir["include/*"]
+    pkgshare.install "LICENSE"
   end
 
   test do
