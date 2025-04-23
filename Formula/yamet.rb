@@ -1,8 +1,8 @@
 class Yamet < Formula
   desc "Yet Another Methylation Entropy Tool"
   homepage "https://github.com/imallona/yamet"
-  url "https://github.com/imallona/yamet/archive/refs/tags/v1.1.0-rc.2.tar.gz"
-  sha256 "b18f41a959e3d5199755534ea858bdc0b3b4940819c4654317f794aeee51ed64"
+  url "https://github.com/imallona/yamet/archive/refs/tags/v1.1.0-rc.3.tar.gz"
+  sha256 "5be828545fd81b0a0bf018484945c554daf740a60dd1d28917be3525ef675755"
   license "GPL-3.0-only"
   head "https://github.com/imallona/yamet.git", branch: "master"
 
