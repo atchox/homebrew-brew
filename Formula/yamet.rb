@@ -7,10 +7,10 @@ class Yamet < Formula
   head "https://github.com/imallona/yamet.git", branch: "master"
 
   bottle do
-    root_url "https://github.com/imallona/yamet/releases/download/v1.1.0-rc.3"
-    sha256 cellar: :any,                 arm64_sequoia: "44caddeb3fb4ab57e4ed8243c28c8a4b389ac661dfc7e043fc44f46813963425"
-    sha256 cellar: :any,                 arm64_sonoma:  "bd4d3f6e84c987ccdb4d393b8cc400b35bd9d07f1d3c4f5ea13f41af061992b6"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b8fe41653b55287769f5b2e6da18e78a64e823f49b931849e3259c1080b10e60"
+    root_url "https://github.com/imallona/yamet/releases/download/v1.1.0-rc.4"
+    sha256 cellar: :any,                 arm64_sequoia: "b50e5ca42023d368aca9fee81717f08df644520a036dc3532f86192d197ec1d8"
+    sha256 cellar: :any,                 arm64_sonoma:  "c5a32baa9969c87b39e241d082a398276a14a4e995982cbfe12da4a1a996d29a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e407540d97220b46c129e96ad89682af04a7ac4daa49565d9f0d9baa5ba09517"
   end
 
   depends_on "cmake" => :build
